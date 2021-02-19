@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Administration">
+   <children>
+      <TabPane layoutX="158.0" layoutY="126.0" prefHeight="700.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab closable="false" style="-fx-background-color: #090a0c,        linear-gradient(#c9700a 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(200,131,248,0.9), rgba(55,100,100,0)); -fx-text-base-color: yellow;" text="Utilizatori">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane prefHeight="671.0" prefWidth="900.0" style="-fx-background-color: #090a0c,        linear-gradient(#c9700a 0%, #37b8bf 20%, #37b8bf 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="445.0" minWidth="10.0" prefWidth="296.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="615.0" minWidth="10.0" prefWidth="604.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="198.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(200,131,148,0.9), rgba(155,100,100,0)); -fx-background-radius: 6, 5; -fx-text-fill: yellow;" text="Parola" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font></Label>
+                              <Label fx:id="userIDLabel" alignment="CENTER" prefHeight="43.0" prefWidth="198.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(200,131,148,0.9), rgba(155,100,100,0)); -fx-background-radius: 6, 5; -fx-background-insets: 0, 1; fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 ); -fx-text-fill: yellow;" text="ID Utilizator" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="198.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(200,131,148,0.9), rgba(155,100,100,0)); -fx-background-radius: 6, 5; -fx-text-fill: yellow;" text="Prenume" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="198.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(200,131,148,0.9), rgba(155,100,100,0)); -fx-background-radius: 6, 5; -fx-text-fill: yellow;" text="Nume" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="198.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(200,131,148,0.9), rgba(155,100,100,0)); -fx-background-radius: 6, 5; -fx-text-fill: yellow;" text="Email" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="198.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(200,131,148,0.9), rgba(155,100,100,0)); -fx-background-radius: 6, 5; -fx-text-fill: yellow;" text="Departament" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="198.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(200,131,148,0.9), rgba(155,100,100,0)); -fx-background-radius: 6, 5; -fx-text-fill: yellow;" text="Tip utilizator" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font></Label>
+                              <TextField fx:id="userID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#checkUserID" prefHeight="45.0" prefWidth="500.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Book Antiqua" size="18.0" />
+                                 </font></TextField>
+                              <TextField fx:id="firstName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#enableEmailField" prefHeight="45.0" prefWidth="500.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Book Antiqua" size="18.0" />
+                                 </font></TextField>
+                              <TextField fx:id="lastName" maxHeight="45.0" maxWidth="500.0" minHeight="45.0" minWidth="500.0" onKeyReleased="#enableEmailField" prefHeight="45.0" prefWidth="500.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Book Antiqua" size="18.0" />
+                                 </font></TextField>
+                              <TextField fx:id="emailAddress" maxHeight="45.0" maxWidth="500.0" minHeight="45.0" minWidth="500.0" prefHeight="45.0" prefWidth="500.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Book Antiqua" size="18.0" />
+                                 </font></TextField>
+                              <ComboBox fx:id="departmentComboBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#checkEmailAddress" prefHeight="45.0" prefWidth="500.0" style="-fx-font-size: 18;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                   <items>
+                                       <FXCollections fx:factory="observableArrayList">
+                                           <String fx:value="Altul" />
+                                           <String fx:value="Ciment" />
+                                           <String fx:value="Gestiune" />
+                                           <String fx:value="Ipsos" />
+                                           <String fx:value="Mentenanta" />
+                                           <String fx:value="Signature" />
+                                       </FXCollections>
+                                   </items>
+                              </ComboBox>
+                              <ComboBox fx:id="userTypeComboBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="500.0" style="-fx-font-size: 18;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                  <items>
+                                      <FXCollections fx:factory="observableArrayList">
+                                          <String fx:value="ADMIN" />
+                                          <String fx:value="L1" />
+                                          <String fx:value="L2" />
+                                          <String fx:value="L3" />
+                                      </FXCollections>
+                                  </items>
+                              </ComboBox>
+
+                               <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="500.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                 <children>
+                                    <Button fx:id="backButton" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToOptions" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0)); -fx-background-radius: 5,4,3,5; -fx-background-insets: 0,1,2,0; -fx-text-fill: yellow; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );" text="Inapoi">
+                                       <font>
+                                          <Font name="Book Antiqua Bold" size="14.0" />
+                                       </font></Button>
+                                    <Button fx:id="addOrUpdateBtn" layoutX="195.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addOrUpdate" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0)); -fx-background-radius: 5,4,3,5; -fx-background-insets: 0,1,2,0; -fx-text-fill: yellow; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );" text="Salveaza">
+                                       <font>
+                                          <Font name="Book Antiqua Bold" size="14.0" />
+                                       </font></Button>
+                                    <Button fx:id="deleteUserBtn" disable="true" layoutX="390.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0)); -fx-background-radius: 5,4,3,5; -fx-background-insets: 0,1,2,0; -fx-text-fill: yellow; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );" text="Sterge">
+                                       <font>
+                                          <Font name="Book Antiqua Bold" size="14.0" />
+                                       </font></Button>
+                                 </children>
+                              </Pane>
+                              <TextField fx:id="passwordField" layoutX="358.0" layoutY="290.0" maxHeight="45.0" maxWidth="500.0" minHeight="45.0" minWidth="500.0" prefHeight="45.0" prefWidth="500.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <Label fx:id="infoLabel" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="500.0" textFill="#13d030" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab closable="false" style="-fx-background-color: #090a0c,        linear-gradient(#c9700a 0%, #1f2429 20%, #191d22 100%),        radial-gradient(center 50% 0%, radius 100%, rgba(179,244,255,0.9), rgba(100,100,100,0)); -fx-text-base-color: yellow;" text="Echipamente">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="664.0" prefWidth="900.0">
+                     <children>
+                        <ComboBox layoutX="14.0" layoutY="34.0" prefWidth="150.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="34.0" />
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="20.0" prefWidth="150.0" text="Alege departamentul" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+                        <Label layoutX="75.0" layoutY="98.0" prefHeight="20.0" prefWidth="150.0" text="Alege / Adauga Echipament" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="100.0" />
+                        <ComboBox layoutX="14.0" layoutY="120.0" prefWidth="150.0" />
+                        <Label layoutX="75.0" layoutY="194.0" prefHeight="20.0" prefWidth="152.0" text="Alege /Adauga Componenta" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="200.0" />
+                        <ComboBox layoutX="15.0" layoutY="220.0" prefWidth="150.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab closable="false" style="-fx-background-color: ORANGE;" text="Rapoarte">
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

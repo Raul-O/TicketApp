@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.TicketList">
+   <children>
+      <ComboBox fx:id="departamentTicketList" layoutX="14.0" layoutY="15.0" onAction="#setEchipament" prefHeight="45.0" prefWidth="200.0" promptText="Departament" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(200,131,148,0.9), rgba(155,100,100,0)); -fx-background-radius: 5,4,3,5; -fx-text-base-color: yellow;" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Altul" />
+               <String fx:value="Ciment" />
+               <String fx:value="Gestiune" />
+               <String fx:value="Ipsos" />
+               <String fx:value="Mentenanta" />
+               <String fx:value="Signature" />
+               <String fx:value="Toate" />
+            </FXCollections>
+         </items>
+         <value>
+            <String fx:value="Toate" />
+         </value>
+      </ComboBox>
+      <ComboBox fx:id="statusTicketList" layoutX="336.0" layoutY="10.0" prefHeight="45.0" prefWidth="200.0" promptText="Status" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(200,231,100,0.9), rgba(155,100,100,0)); -fx-background-radius: 5,4,3,5; -fx-text-base-color: yellow;" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="10.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="DESCHIS" />
+               <String fx:value="INCHIS" />
+               <String fx:value="REZOLVAT" />
+               <String fx:value="CONFIRMAT" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <ComboBox fx:id="echipamentTicketList" layoutX="14.0" layoutY="72.0" onAction="#getSelectedEchipament" prefHeight="45.0" prefWidth="200.0" promptText="Echipament" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(200,131,148,0.9), rgba(155,100,100,0)); -fx-background-radius: 5,4,3,5; -fx-text-base-color: yellow;" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="60.0">
+         <value>
+            <String fx:value="Toate" />
+         </value>
+      </ComboBox>
+      <DatePicker layoutX="686.0" layoutY="72.0" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0)); -fx-background-radius: 5,4,3,5; -fx-text-fill: yellow;" visible="false" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0" />
+      <DatePicker layoutX="686.0" layoutY="15.0" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0)); -fx-background-radius: 5,4,3,5; -fx-text-fill: yellow;" visible="false" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Button fx:id="backBtn" layoutX="14.0" layoutY="656.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backToOptions" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0)); -fx-background-radius: 5,4,3,5; -fx-text-fill: yellow;" text="Inapoi" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="SearchBtn" layoutX="14.0" layoutY="144.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#searchTickets" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0)); -fx-background-radius: 5,4,3,5; -fx-text-fill: yellow;" text="Cauta" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="110.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="ticketTabel" layoutY="192.0" prefHeight="385.0" prefWidth="871.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0" />
+   </children>
+</AnchorPane>
